@@ -76,6 +76,8 @@ TARGET_KERNEL_SOURCE := kernel/samsung/exynos9820
 
 ## Keymaster
 TARGET_KEYMASTER_VARIANT := samsung
+TARGET_KEYMASTER_ADDITIONAL_SHARED_LIBS := \
+    libcrypto-compat
 
 ## Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/batt_slate_mode
